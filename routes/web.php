@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/organization/store',[OrganizationController::class,'store'])->name('organization.store');
 
 Route::get('/',function(){
-    return view('welcome');
+    return response('<h1>Hello world</h1>');
 });
 
 Route::group(['prefix' => 'admin'], function () {
